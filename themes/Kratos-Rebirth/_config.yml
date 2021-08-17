@@ -75,8 +75,8 @@ disqusjs:
 
 # Valine [Valine](https://valine.js.org) 评论相关
 valine:
-  app_id: 
-  app_key: 
+  app_id: moriWItkF2nzXyN8boxaanTJ-gzGzoHsz
+  app_key: 6sOV7FSsATCJLnxgr7W52F2Y
   visitor: true
   enableQQ: false
 
@@ -88,7 +88,7 @@ twikoo:
 ## 不仅限于以下内容，您可以参照 Waline的 [前端配置文档](https://waline.js.org/client/basic.html) 设置您需要的配置项
 ## el 和 path 会在页面自动生成，不必加入
 waline:
-  serverURL: #后端服务器地址，必填
+  serverURL: https://moriwitk.lc-cn-n1-shared.com #后端服务器地址，必填
   visitor: true
 
 # APlayer 左下角音乐播放器
@@ -110,7 +110,7 @@ widgets:
 - category
 - tagcloud
 - posts
-avatarUri: /images/avatar.webp
+avatarUri: https://greenhaha.oss-cn-beijing.aliyuncs.com/frontend/assets/header/header.png
 
 # Fancybox 文章内图片单击放大
 fancybox: true
@@ -158,8 +158,8 @@ friends:
     description: "好伙伴们在哪里~"
     updated: "2021-01-18"
   list:
-  - name: "猫猫①号"
-    bio: "喵~"
+  - name: "伙伴①号"
+    bio: "瞅啥~"
     avatar: "../images/avatar.webp"
     link: "#"
   verify: true # 验证每个友链的可访问性，炸了会有提示
