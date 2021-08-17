@@ -107,3 +107,11 @@ deploy:
   repo: https://github.com/greenhaha/greenhaha.github.io.git
   branch: master
   
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
+    hub:
+    content: true
+    content_limit: true
+    content_limit_delim: ' '

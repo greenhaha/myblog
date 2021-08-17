@@ -20,6 +20,7 @@ menu:
   archives: /archives/
   csgoserve: /serve-csgo/
   friends: /friends/
+  rss3: /atom.xml
   # sites:
   #   submenu: true
   #   author: https://candinya.com
@@ -30,6 +31,7 @@ label:
   archives: <i class="fa fa-file"></i>档案馆
   csgoserve: <i class="fa fa-link"></i>csgo服务器
   friends: <i class="fa fa-paw"></i>好伙伴
+  rss3: <i class="fa fa-rss"></i>RSS订阅
   # sites:
   #   submenu: <i class="fa fa-link"></i>链接
   #   author: 作者博客
