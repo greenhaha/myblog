@@ -1,4 +1,5 @@
 ---
+toc: true
 title: javascript内存泄漏
 date: 2017-07-03 21:47:56
 tags:

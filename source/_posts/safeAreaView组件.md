@@ -1,4 +1,5 @@
 ---
+toc: true
 title: safeAreaView组件
 date: 2019-09-04 21:56:12
 tags:

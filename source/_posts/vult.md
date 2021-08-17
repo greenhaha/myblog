@@ -1,4 +1,5 @@
 ---
+toc: true
 title: 超详细Vultr (VPS) 搭建 ShadowSocks/新手图文指导教程
 date: 2019-01-23 10:11:51
 tags:

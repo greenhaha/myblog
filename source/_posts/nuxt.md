@@ -1,4 +1,5 @@
 ---
+toc: true
 title: Nuxt初识
 date: 2018-07-20 16:41:56
 tags:

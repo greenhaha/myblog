@@ -1,4 +1,5 @@
 ---
+toc: true
 title: 闭包，作用域链
 date: 2017-01-23 21:10:39
 tags:

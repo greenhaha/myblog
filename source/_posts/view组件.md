@@ -1,4 +1,5 @@
 ---
+toc: true
 title: view组件
 date: 2019-09-04 21:54:48
 tags:

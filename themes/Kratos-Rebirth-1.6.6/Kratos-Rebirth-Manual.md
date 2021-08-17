@@ -1,4 +1,5 @@
 ---
+toc: true
 title: Kratos-Rebirth食用说明
 top: false
 date: 2020-04-07 15:27:05
@@ -282,6 +283,7 @@ only:
 
 ``` yml
 ---
+toc: true
 title: {{ title }}
 date: {{ date }}
 categories:

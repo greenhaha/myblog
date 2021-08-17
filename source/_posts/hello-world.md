@@ -1,4 +1,5 @@
 ---
+toc: true
 title: Hello World
 date: 2018-06-02 11:48:43
 preview_text: Welcome to [Hexo]

@@ -1,4 +1,5 @@
 ---
+toc: true
 title: 延迟加载 React Components (用 react.lazy 和 suspense)
 date: 2019-06-20 21:12:44
 tags:

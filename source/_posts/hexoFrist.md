@@ -1,4 +1,5 @@
 ---
+toc: true
 title: Hexo初次使用体验
 date: 2018-06-25 11:48:43
 preview_text: 虽然之前使用过wordpress搭建过博客，总体体验还（痛）行（苦）。之前看到很多人用hexo来搭建博客并且展示效果都挺好。于是今天来体验一把hexo的神奇。

@@ -1,4 +1,5 @@
 ---
+toc: true
 title: button组件
 date: 2019-09-04 21:57:22
 tags:

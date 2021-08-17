@@ -1,4 +1,5 @@
 ---
+toc: true
 title: React浅比较
 date: 2018-11-21 22:10:35
 tags:

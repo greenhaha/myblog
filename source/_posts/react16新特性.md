@@ -1,4 +1,5 @@
 ---
+toc: true
 title: React 16 新特性 error Boundary
 date: 2019-06-18 15:49:15
 tags:

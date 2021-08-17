@@ -1,4 +1,5 @@
 ---
+toc: true
 title: 浏览器历史记录
 date: 2021-6-30 20:34:00
 tags:  
