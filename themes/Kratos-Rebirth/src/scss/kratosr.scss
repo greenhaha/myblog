@@ -1399,7 +1399,7 @@ ul.kratos-post-meta {
 
 .kratos-post-inner-new {
   margin-left: 255px;
-  height: 160px;
+  height: 165px;
   padding: 21px 20px 0 3px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2666,7 +2666,9 @@ body.scroll-down .kr-tool {
   [class*=col-md-] {
     float: left
   }
-
+  .row .page-container-col {
+    width: 100%!important
+  }
   .col-md {
     &-1 {
       width: 8.33333333%;

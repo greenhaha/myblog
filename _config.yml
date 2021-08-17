@@ -103,6 +103,7 @@ theme: Kratos-Rebirth
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: 'git'
-  repo: https://github.com/greenhaha/myblog.git
+  # repo: https://github.com/greenhaha/myblog.git
+  repo: https://github.com/greenhaha/greenhaha.github.io.git
   branch: master
   
