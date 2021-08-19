@@ -3,6 +3,10 @@ toc: true
 title: shadowsocks简介
 date: 2019-01-12 10:14:40
 tags:
+- 服务器
+- 网络
+category: 
+- 全新体验
 ---
 
 **shadowsocks** 是一种基于Socks5代理方式的网络数据加密传输包，并采用Apache许可证、GPL、MIT许可证等多种自由软件许可协议开放源代码。shadowsocks分为服务器端和客户端，在使用之前，需要先将服务器端部署到服务器上面，然后通过客户端连接并创建本地代理。目前包使用Python、C、C++、C#、Go语言等编程语言开发。
@@ -52,17 +56,17 @@ Enjoy it
 **2）把8989端口设置为开放状态**
 
 打开防火墙配置文件：
-
+```
 $ vim /etc/sysconfig/iptables
-
+```
 插入下面这句：
-
+```
 -A INPUT -p tcp -m state --state NEW -m tcp --dport 8989 -j ACCEPT
-
+```
 保存后使更改生效，执行以下：
-
+```
 $ service iptables save
-
+```
 **3）开放云服务器端口（如果是阿里云服务器请继续看）**
 
 阿里云有安全组配置，需要进入阿里云管理界面找到安全组配置，把8989端口开放。否则外网依然无法方位该端口。
@@ -70,9 +74,9 @@ $ service iptables save
 至此，服务器部署完成！
 
 **4）卸载方法：使用root用户，执行以下命令即可**
-
+```
 $ ./shadowsocks-all.sh uninstall
-
+```
 ### 3、客户端使用1）windows客户端
 
 首先搜索shadowsocks-windows，打开后进行如下配置。
@@ -113,56 +117,57 @@ proxyMethod：system
 
 method ：刚才配置的加密方式。笔者是：AES-256-CFB
 
-点击&quot;save configuration&quot;后进入choos页面，点击你刚刚创建的那个名字abcd即可。回到首页，找到你创建的代理并打开。
+点击'save configuration'后进入choos页面，点击你刚刚创建的那个名字abcd即可。回到首页，找到你创建的代理并打开。
 
 配置成功！经测试google、YouTube等网站打开很快，1080p视频毫无压力。
 
 ### 3）ubuntu系统代理配置
 
 **a.安装shadowsocks**
-
+```
 $ sudo apt install shadowsocks
-
+```
 **b.找到config.json，并编辑代理配置**
-
+```
 $ cd /etc/shadowsocks/
 
 $ sudo vim config.json
 
 {
 
-    &quot;server&quot;:&quot;x.x.x.x&quot;,    //ss服务器的ip
+    'server':'x.x.x.x',    //ss服务器的ip
 
-    &quot;server\_port&quot;:8989, //ss服务器的端口，笔者这里配置的是8989
+    'server\_port':8989, //ss服务器的端口，笔者这里配置的是8989
 
-     &quot;local\_address&quot;: &quot;127.0.0.1&quot;,
+     'local\_address': '127.0.0.1',
 
-    &quot;local\_port&quot;:1080,  //本机端口：可以换成别的
+    'local\_port':1080,  //本机端口：可以换成别的
 
-    &quot;password&quot;:&quot;123456&quot;, //ss服务器密码
+    'password':'123456', //ss服务器密码
 
-    &quot;timeout&quot;:300,
+    'timeout':300,
 
-    &quot;method&quot;:&quot;aes-256-cfb&quot;//ss服务器配置的加密方式
+    'method':'aes-256-cfb'//ss服务器配置的加密方式
 
 }
-
+```
 **c.启动shadowsocks，启动后控制台不要关闭**
-
+```
 $ sslocal -c config.json
-
+```
 **d.配置代理。**
 
 右上角-系统设置-网络-网络代理-手动。
 
 Socks主机：127.0.0.1    端口：1080
 
-最后点击&quot;应用到整个系统&quot;，至此，配置完成。
+最后点击'应用到整个系统'，至此，配置完成。
 
 **e.让终端也走代理的方法:**
 
 在~/.bashrc文件中增加以下两句，表示bash终端中的http和https的请求也通过socks5协议进行代理转发。
+```
+export http\_proxy='socks5://127.0.0.1:1080';
 
-export http\_proxy=&quot;socks5://127.0.0.1:1080&quot;
-
-export https\_proxy=&quot;socks5://127.0.0.1:1080&quot;
+export https\_proxy='socks5://127.0.0.1:1080'
+```

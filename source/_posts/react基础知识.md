@@ -6,6 +6,8 @@ tags:
 - 浏览器 
 - react
 - JavaScript
+category: 
+- 知识剖析
 ---
 
 # react 基础知识

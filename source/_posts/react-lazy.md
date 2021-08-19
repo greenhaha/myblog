@@ -3,6 +3,10 @@ toc: true
 title: 延迟加载 React Components (用 react.lazy 和 suspense)
 date: 2019-06-20 21:12:44
 tags:
+- JavaScript
+- React
+category: 
+- 学习笔记
 ---
 
 _在 _16.6.0 版本里也包含了一个吸引人的新特性，可以让我们在不依赖第三方库的情况下简化对延迟加载（lazy loading）的处理。
@@ -52,7 +56,7 @@ $ sudo npm start复制代码
 
 1. ._Artists.js_
 
-**import** React **from**&#39;react&#39;; **import**&#39;./App.css&#39;; **import** artists **from**&quot;./store&quot;; **export**** default ****function**** Artists**(){
+**import** React **from**&#39;react&#39;; **import**&#39;./App.css&#39;; **import** artists **from**'./store'; **export**** default ****function**** Artists**(){
 
   **return** (
 
@@ -62,9 +66,9 @@ $ sudo npm start复制代码
 
    {artists.map(artist =\&gt;(
 
-   \&lt;div id=&quot;card-body&quot;key={artist.id}\&gt;
+   \&lt;div id='card-body'key={artist.id}\&gt;
 
-    \&lt;div className=&quot;card&quot;\&gt;
+    \&lt;div className='card'\&gt;
 
      \&lt;h2\&gt;{artist.name}\&lt;/h2\&gt;
 
@@ -90,57 +94,57 @@ $ sudo npm start复制代码
 
 {
 
-  id: &quot;1&quot;,
+  id: '1',
 
-  name: &quot;Davido&quot;,
+  name: 'Davido',
 
-  country: &quot;Nigeria&quot;,
+  country: 'Nigeria',
 
-  genre: &quot;Afro-Pop&quot;,
+  genre: 'Afro-Pop',
 
-  albums: &quot;2&quot;
-
-},
-
-{
-
-  id: &quot;2&quot;,
-
-  name: &quot;AKA&quot;,
-
-  country: &quot;South-Africa&quot;,
-
-  genre: &quot;Hip-Hop&quot;,
-
-  albums: &quot;4&quot;
+  albums: '2'
 
 },
 
 {
 
-  id: &quot;3&quot;,
+  id: '2',
 
-  name: &quot;Seyi Shay&quot;,
+  name: 'AKA',
 
-  country: &quot;Nigeria&quot;,
+  country: 'South-Africa',
 
-  genre: &quot;R&amp;B&quot;,
+  genre: 'Hip-Hop',
 
-  albums: &quot;2&quot;
+  albums: '4'
 
 },
 
 {
 
-  id: &quot;4&quot;,
+  id: '3',
 
-  name: &quot;Sauti Sol&quot;,
+  name: 'Seyi Shay',
 
-  country: &quot;Kenya&quot;,
+  country: 'Nigeria',
 
-  genre: &quot;Soul&quot;,
+  genre: 'R&amp;B',
 
-  albums: &quot;3&quot;
+  albums: '2'
+
+},
+
+{
+
+  id: '4',
+
+  name: 'Sauti Sol',
+
+  country: 'Kenya',
+
+  genre: 'Soul',
+
+  albums: '3'
 
 }
 
@@ -154,7 +158,7 @@ $ sudo npm start复制代码
 
   **return** (
 
-   \&lt;div className=&quot;App&quot;\&gt;
+   \&lt;div className='App'\&gt;
 
     \&lt;Artists /\&gt;
 
@@ -288,7 +292,7 @@ ReactDOM.render(\&lt;App /\&gt;, document.getElementById(&#39;root&#39;));复制
 
   **return** (
 
-   \&lt;div className=&quot;App&quot;\&gt;
+   \&lt;div className='App'\&gt;
 
     \&lt;Suspense fallback={\&lt;h1\&gt;Still Loading…\&lt;/h1\&gt;}\&gt;
 

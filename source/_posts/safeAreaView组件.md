@@ -3,6 +3,9 @@ toc: true
 title: safeAreaView组件
 date: 2019-09-04 21:56:12
 tags:
+- ReactNative
+category: 
+- 文档教程
 ---
 
 #SafeAreaView 组件

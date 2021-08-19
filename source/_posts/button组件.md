@@ -3,6 +3,10 @@ toc: true
 title: button组件
 date: 2019-09-04 21:57:22
 tags:
+- JavaScript
+- ReactNative
+category: 
+- 文档教程
 ---
 
 # Button组件

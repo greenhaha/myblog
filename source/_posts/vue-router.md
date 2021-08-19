@@ -7,6 +7,8 @@ tags:
 - JavaScript
 - vue
 - JavaScript
+category: 
+- 知识剖析
 ---
 
 # vue-router剖析

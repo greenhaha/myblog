@@ -6,6 +6,8 @@ tags:
 - HTML 
 - Vue 
 - JavaScript
+category: 
+- 知识剖析
 ---
 # VUE 初级知识
 

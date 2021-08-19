@@ -7,6 +7,8 @@ tags:
 - react
 - react-router
 - JavaScript
+category: 
+- 知识剖析
 ---
 
 # react-router

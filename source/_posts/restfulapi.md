@@ -3,10 +3,14 @@ toc: true
 title: REST与RESTful的故事
 date: 2019-03-20 11:33:09
 tags:
+- node
+- JavaScript
+category: 
+- 学习笔记
 ---
 # REST是什么？
  
-REST英文全称：Representational State Transfer。中文：表现层状态转换。（第一次看到这个词的时候，一脸懵逼中 \_(:3LZ)\_）。它是由美国的[Roy Thomas Fielding](https://zh.wikipedia.org/w/index.php?title=Roy_Thomas_Fielding&amp;action=edit&amp;redlink=1)博士提出的万维网软件架构风格。他的目的就是在不同的软件/程序在网络中传递信息时，提供一组约束和属性。他是一种为万维网络服务设计的软件构件风格。而RESTful就是&quot;URL定位资源，用HTTP动词（GET,POST,DELETE,DETC）描述操作&quot;
+REST英文全称：Representational State Transfer。中文：表现层状态转换。（第一次看到这个词的时候，一脸懵逼中 \_(:3LZ)\_）。它是由美国的[Roy Thomas Fielding](https://zh.wikipedia.org/w/index.php?title=Roy_Thomas_Fielding&amp;action=edit&amp;redlink=1)博士提出的万维网软件架构风格。他的目的就是在不同的软件/程序在网络中传递信息时，提供一组约束和属性。他是一种为万维网络服务设计的软件构件风格。而RESTful就是'URL定位资源，用HTTP动词（GET,POST,DELETE,DETC）描述操作'
  
 ## RESTful API是什么？
  

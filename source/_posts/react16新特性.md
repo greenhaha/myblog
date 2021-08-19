@@ -3,6 +3,10 @@ toc: true
 title: React 16 新特性 error Boundary
 date: 2019-06-18 15:49:15
 tags:
+- JavaScript
+- React
+category: 
+- 学习笔记
 ---
 # 什么是边界错误
 Error boundary：错误边界。它是react16.0版本发布的时候，携带的一个新的特性。在它的中文官方文档中有这样一段描述：

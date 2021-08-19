@@ -3,6 +3,9 @@ toc: true
 title: view组件
 date: 2019-09-04 21:54:48
 tags:
+- ReactNative
+category: 
+- 文档教程
 ---
 
 # React View 组件

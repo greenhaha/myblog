@@ -3,6 +3,10 @@ toc: true
 title: Nuxt初识
 date: 2018-07-20 16:41:56
 tags:
+- vue
+- nuxt
+category: 
+- 学习笔记
 ---
 
 自从出现前后端分离概念后。前端越来越注重页面交互，后端越来越注重数据逻辑。对于前端来说，出现了一大批javascript框架。其中深受开发者欢迎的框架为React Vue Angular。

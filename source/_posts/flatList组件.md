@@ -3,6 +3,10 @@ toc: true
 title: flatList组件
 date: 2019-09-04 21:56:53
 tags:
+- JavaScript
+- ReactNative
+category: 
+- 文档教程
 ---
 
 # FlatList 组件

@@ -3,6 +3,8 @@ toc: true
 title: Html5.2 特性介绍
 date: 2019-02-21 15:06:33
 tags:
+category: 
+- 学习笔记
 ---
 
 # Html5.2 特性介绍
@@ -13,7 +15,7 @@ tags:
 
 在html5.2中添加了dialog标签。来帮助我们快速实现一个对话框。在html5.2之前，如果要实现一个对话框功能只能利用div同时配合display属性。在html5.2之后只需要dialog就可以实现对话框功能。
 
-&lt;dialog id=&quot;dialog&quot;&gt;
+&lt;dialog id='dialog'&gt;
 
     <h2>我是对话框标题</h2>
 
@@ -23,7 +25,7 @@ tags:
 
 默认情况下 dialog时隐藏状态，可以给他添加open属性让他显示出来。
 
-&lt;dialog id=&quot;dialog&quot; open&gt;
+&lt;dialog id='dialog' open&gt;
 
    <h2>我是对话框标题</h2>
 

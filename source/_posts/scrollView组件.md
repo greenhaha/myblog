@@ -3,6 +3,9 @@ toc: true
 title: scrollView组件
 date: 2019-09-04 21:55:32
 tags:
+- ReactNative
+category: 
+- 文档教程
 ---
 
 # scrollView 组件

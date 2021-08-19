@@ -3,7 +3,7 @@ function searchEscape(keyword) {
         '&': '&amp;',
         '<': '&lt;',
         '>': '&gt;',
-        '"': '&quot;',
+        '"': ''',
         '\'': '&#39;',
         '/': '&#x2F;'
     };
