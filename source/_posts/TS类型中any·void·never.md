@@ -8,7 +8,7 @@ tags:
 - ELM
 - JavaScript
 category: 
-- 文档教程
+- 知识剖析
 ---
 
 在ts的类型中常见的类型`number`, `string`, `boolean`等之外, 也有其他不直观的类型表达`any` `void` `never`
