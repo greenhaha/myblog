@@ -6,6 +6,8 @@ pic: http://greenhaha.oss-cn-beijing.aliyuncs.com/frontend/assets/img/4_734.png
 tags:  
 - Node 
 - TypeScript
+category: 
+- 知识剖析
 ---
 
 ## Interface 与Type
