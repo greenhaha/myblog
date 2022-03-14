@@ -157,5 +157,6 @@ User 接口为 {
 */
 ```
 
+
 ## 总结
 一般来说，如果不清楚什么时候用interface/type，能用 interface 实现，就用 interface , 如果不能就用 type 。其他更多详情参看[官方规范文档](https://github.com/microsoft/TypeScript/blob/main/doc/spec-ARCHIVED.md)
