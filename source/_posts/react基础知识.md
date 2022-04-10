@@ -1,6 +1,6 @@
 ---
 toc: true
-title: 浏览器历史记录
+title: react基础知识
 date: 2021-3-15 20:34:00
 tags:  
 - 浏览器 
