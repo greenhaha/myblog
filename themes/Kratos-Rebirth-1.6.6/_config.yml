@@ -19,6 +19,7 @@ menu:
   index: /
   archives: /archives/
   csgoserve: https://hlymcn.com/serve-csgo/index.html
+  svgedit: https://hlymcn.com/svgedit/index.html
   friends: /friends/
   about: /about/
   rss3: /atom.xml
@@ -30,7 +31,8 @@ menu:
 label:
   index: <i class="fa fa-home"></i>首页
   archives: <i class="fa fa-file"></i>档案馆
-  csgoserve: <i class="fa fa-link"></i>csgo服务器
+  csgoserve: <i class="fa fa-server"></i>csgo服务器
+  svgedit: <i class="fa fa-reddit-alien"></i>svg工作台
   about: <i class="fa fa-send"></i>关于我
   friends: <i class="fa fa-paw"></i>好伙伴
   rss3: <i class="fa fa-rss"></i>RSS订阅
