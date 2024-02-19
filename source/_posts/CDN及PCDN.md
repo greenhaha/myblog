@@ -1,6 +1,6 @@
 ---
 toc: true
-title: 加密媒体扩展
+title: CDN与PCDN
 date: 2024-01-20 13:30:51
 pic: https://greenhaha.oss-cn-beijing.aliyuncs.com/frontend/assets/img/pcdn_peer.png
 tags:
