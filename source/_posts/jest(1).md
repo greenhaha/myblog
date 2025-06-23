@@ -26,7 +26,7 @@ Facebook 开源的一套 JavaScript 测试框架，它集成了断言库、mock�
 2. 输出格式化的快照文件，阅读友好，开发者更容易看懂
 3. 当在做 diff 对比时，jest 能高亮差异点，而且对比信息更容易阅读
 
-```
+```ts
 // tests/components/Title.test.tsx
 import React from "react";
 import { render } from "@testing-library/react";
@@ -47,7 +47,7 @@ describe("Title", () => {
 
 执行测试后，会发现在 `tests/components/` 下多了一个 `Title.test.tsx.snap` 文件，打开来看看：
 
-```
+```ts
 // tests/components/Title.test.tsx.snap
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
@@ -89,7 +89,7 @@ exports[`Title 可以正确渲染小字 1`] = `
 
 对于这个问题，我们能做的就是避免大快照，不要无脑地记录整个组件的快照，特别是有别的 UI 组件参与其中的时候:
 
-```
+```ts
 const Title: FC<Props> = (props) => {
   const { title, type } = props;
 
@@ -111,7 +111,7 @@ const Title: FC<Props> = (props) => {
 2. 假错误
    业务代码并没有任何问题，测试却出错了，这就是测试中的 “假错误”
 
-```
+```ts
 describe("Title", () => {
   it("可以正确渲染大字", () => {
     const { getByText } = render(<Title type="large" title="我是一个大帅哥" />);
@@ -152,7 +152,7 @@ describe("Title", () => {
 
 大多数情况下，对于组件中都会参杂对后端 API 的调用，但是对于每次测试来说不可能时刻调用后端接口。这个时候就需要利用 jest mock 功能 mock 后端请求返回值。
 
-```
+```ts
 // src/components/AuthButton/index.tsx
 import React, { FC, useEffect, useState } from "react";
 import { Button, ButtonProps, message } from "antd";
@@ -196,7 +196,7 @@ export default AuthButton;
 
 ### Mock Axios
 
-```
+```ts
 // tests/components/AuthButton/mockAxios.test.tsx
 import React from "react";
 import axios from "axios";
@@ -233,7 +233,7 @@ describe("AuthButton Mock Axios", () => {
 
 ### Mock API 函数
 
-```
+```ts
 // tests/components/AuthButton/mockGetUserRole.test.tsx
 import React from "react";
 import { render, screen } from "@testing-library/react";
@@ -276,13 +276,13 @@ describe("AuthButton Mock Axios", () => {
 
 > [msw](https://github.com/mswjs/msw)可以拦截指定的 Http 请求，有点类似 Mock.js，是做测试时一个非常强大好用的 Http Mock 工具。
 
-```
+```bash
 npm i -D msw@0.39.2
 ```
 
 先在 tests/mockServer/handlers.ts 里添加 Http 请求的 Mock Handler：
 
-```
+```ts
 import { rest } from "msw";
 
 const handlers = [
@@ -301,7 +301,7 @@ export default handlers;
 
 然后在 tests/mockServer/server.ts 里使用这些 handlers 创建 Mock Server 并导出它：
 
-```
+```ts
 import { setupServer } from "msw/node";
 import handlers from "./handlers";
 
@@ -330,7 +330,7 @@ afterAll(() => {
 
 这样一来，在所有测试用例中都能获得 handlers.ts 里的 Mock 返回了。如果你想在某个测试文件中想单独指定某个接口的 Mock 返回， 可以使用 server.use(mockHandler) 来实现。 我们以 `<AuthButton/>` 为例：
 
-```
+```ts
 // tests/components/AuthButton/mockHttp.test.tsx
 // 更偏向真实用例，效果更好
 import server from "../../mockServer/server";
@@ -406,7 +406,7 @@ Jest 还有一个非常强大的功能，利用 Node.js 的 Worker 开启多个�
 
 通常来说，单个测试用例速度应该要做到非常快的，尽量不写一些耗时的操作，比如不要加 setTimeout，n 个 for 循环等。 所以，理论上，测试数量不多的情况下单线程就足够了。这里我们可以把 jest.config.js 配置改为用单线程：
 
-```
+```ts
 // jest.config.js
 module.exports = {
   maxWorkers: 1
@@ -444,7 +444,7 @@ npm i -D @swc/core@1.2.165 @swc/jest@0.2.20
 
 然后在 jest.config.js 里添加：
 
-```
+```ts
 module.exports = {
   // 不用 ts-jest
   // preset: "ts-jest",
